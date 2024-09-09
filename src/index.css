@@ -1,0 +1,155 @@
+@import url("../node_modules/modern-normalize/modern-normalize.css");
+
+@font-face {
+  font-family: "MacPaw Fixel Display";
+  src: url("./assets/fonts/MacPawFixelDisplay-Bold.woff2") format("woff2"),
+    url("./assets/fonts/MacPawFixelDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MacPaw Fixel Display";
+  src: url("./assets/fonts/MacPawFixelDisplay-Light.woff2") format("woff2"),
+    url("./assets/fonts/MacPawFixelDisplay-Light.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MacPaw Fixel Display";
+  src: url("./assets/fonts/MacPawFixelDisplay-Medium.woff2") format("woff2"),
+    url("./assets/fonts/MacPawFixelDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MacPaw Fixel Display";
+  src: url("./assets/fonts/MacPawFixelDisplay-Regular.woff2") format("woff2"),
+    url("./assets/fonts/MacPawFixelDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MacPaw Fixel Display";
+  src: url("./assets/fonts/MacPawFixelDisplay-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/MacPawFixelDisplay-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "MacPaw Fixel Display", sans-serif;
+
+  --black: #121417;
+  --greyGreen: #85aa9f;
+  --white-1: #f8f8f8;
+  --white: #fcfcfc;
+  --greenGray: #a5c0b8;
+  --red: #d80027;
+  --green: #008000;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  background: var(--white-1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  font-family: var(--font-family);
+  color: var(--black);
+  font-style: normal;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-family);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container {
+  /* width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
